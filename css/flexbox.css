@@ -1,0 +1,62 @@
+/* ================================= 
+  Media Queries
+==================================== */
+@media (min-width: 310px) {
+  .main-header,
+  .main-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .main-header__logo {
+    align-self: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-header,
+  .main-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .main-nav {
+    flex-basis: 100%;
+  }
+  .main-header__logo {
+    order: -1;
+  }
+  .row {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .col {
+    flex-basis: 50%;
+  }
+  .tertiary {
+    flex-grow: 1;
+  }
+}
+
+@media (min-width: 1025px) {
+  .main-header,
+  .main-nav {
+    flex-direction: row;
+  }
+  .main-nav {
+    flex-basis: auto; 
+  }
+  .main-header__logo {
+    order: 0;
+    margin-right: auto;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .col {
+    flex: 1;
+  }
+  .primary {
+    flex: 1.3;
+  }
+}
